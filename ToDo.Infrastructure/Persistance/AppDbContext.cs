@@ -15,14 +15,14 @@ namespace ToDo.Infrastructure.Persistance
             
         }
 
-        public DbSet<Domain.Entities.Task> Tasks { get; set; }
+        public DbSet<TaskEntity> Tasks { get; set; }
         public DbSet<User> Users  { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
 
-            modelBuilder.Entity<Domain.Entities.Task>()
+            modelBuilder.Entity<TaskEntity>()
             .HasOne(t => t.User) 
             .WithMany(u => u.Tasks)
             .HasForeignKey(t => t.UserId);

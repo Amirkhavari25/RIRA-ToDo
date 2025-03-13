@@ -14,6 +14,6 @@ namespace ToDo.Domain.Entities
         public string Mobile { get; set; }
         public string PasswordHash { get; set; }
 
-        public ICollection<Task> Tasks { get; set; }
+        public ICollection<TaskEntity> Tasks { get; set; }
     }
 }

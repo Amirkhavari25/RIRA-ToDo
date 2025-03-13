@@ -7,7 +7,7 @@ using ToDo.Domain.Common;
 
 namespace ToDo.Domain.Entities
 {
-    public class Task : BaseEntity
+    public class TaskEntity : BaseEntity
     {
         public string Title { get; set; }
         public string Description { get; set; }

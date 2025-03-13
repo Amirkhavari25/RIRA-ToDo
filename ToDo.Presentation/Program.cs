@@ -7,7 +7,7 @@ namespace ToDo.Presentation
 {
     public class Program
     {
-        public static async void Main(string[] args)
+        public async static Task Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
 
