@@ -1,0 +1,58 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Project\\Rira\\RIRA-ToDo\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{99911BA1-EF5D-46AB-8722-5C47F9C70834}|ToDo.IOC\\ToDo.IOC.csproj|c:\\project\\rira\\rira-todo\\todo.ioc\\dependencycontainerservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{99911BA1-EF5D-46AB-8722-5C47F9C70834}|ToDo.IOC\\ToDo.IOC.csproj|solutionrelative:todo.ioc\\dependencycontainerservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A534E29-F25A-400E-A9EE-94741D0B69F9}|ToDo.Presentation\\ToDo.Presentation.csproj|c:\\project\\rira\\rira-todo\\todo.presentation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A534E29-F25A-400E-A9EE-94741D0B69F9}|ToDo.Presentation\\ToDo.Presentation.csproj|solutionrelative:todo.presentation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Project\\Rira\\RIRA-ToDo\\ToDo.Presentation\\Program.cs",
+              "RelativeDocumentMoniker": "ToDo.Presentation\\Program.cs",
+              "ToolTip": "C:\\Project\\Rira\\RIRA-ToDo\\ToDo.Presentation\\Program.cs",
+              "RelativeToolTip": "ToDo.Presentation\\Program.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwDIAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-13T11:21:52.145Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DependencyContainerServices.cs",
+              "DocumentMoniker": "C:\\Project\\Rira\\RIRA-ToDo\\ToDo.IOC\\DependencyContainerServices.cs",
+              "RelativeDocumentMoniker": "ToDo.IOC\\DependencyContainerServices.cs",
+              "ToolTip": "C:\\Project\\Rira\\RIRA-ToDo\\ToDo.IOC\\DependencyContainerServices.cs",
+              "RelativeToolTip": "ToDo.IOC\\DependencyContainerServices.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-13T11:17:18.971Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -53,5 +53,4 @@ CodeCoverage/
 TestResult.xml
 nunit-*.xml
 
-**/appsetting.json
-/ToDo.Presentation/appsettings.json
+**/appsettings.json
