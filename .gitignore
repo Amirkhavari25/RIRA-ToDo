@@ -55,3 +55,4 @@ nunit-*.xml
 
 **/appsettings.json
 **/Migrations
+.vs/
