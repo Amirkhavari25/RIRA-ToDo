@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 using ToDo.Application.DTOs;
+using ToDo.Application.Features.Users.Commands.Login;
 using ToDo.Application.Features.Users.Commands.Register;
 
 namespace ToDo.Presentation.Controller
@@ -32,6 +33,20 @@ namespace ToDo.Presentation.Controller
             }
 
             return BadRequest(result.ErrorMessage);
+        }
+
+        [HttpPost("login")]
+        public async Task<IActionResult> Login(LoginCommand command)
+        {
+            if (!ModelState.IsValid)
+                return BadRequest("Invalid data");
+
+            var result = await _mediator.Send(command);
+
+            if (!result.Success)
+                return Unauthorized(result.ErrorMessage);
+
+            return Ok(new { Token = result.Data });
         }
     }
 }

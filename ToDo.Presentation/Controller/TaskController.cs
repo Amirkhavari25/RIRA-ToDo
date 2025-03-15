@@ -2,11 +2,13 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System.Security.Claims;
 using ToDo.Application.Features.Tasks.Commands.CreateTask;
+using ToDo.Domain.Entities;
 
 namespace ToDo.Presentation.Controller
 {
-   // [Authorize]
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class TaskController : ControllerBase
@@ -24,8 +26,11 @@ namespace ToDo.Presentation.Controller
             {
                 return BadRequest("Invalid Data");
             }
-
-            var creatorId = User.FindFirst("sub")?.Value;
+            foreach (var claim in User.Claims)
+            {
+                Console.WriteLine($"Claim Type: {claim.Type}, Claim Value: {claim.Value}");
+            }
+            var creatorId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
             if (creatorId == null)
             {
                 return Unauthorized("Invalid User request");

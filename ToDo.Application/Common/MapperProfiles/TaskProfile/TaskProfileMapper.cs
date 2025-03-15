@@ -19,7 +19,7 @@ namespace ToDo.Application.Common.MapperProfiles.TaskProfile
                 .ForMember(dest => dest.CreateDate, opt => opt.Ignore())
                 .ForMember(dest => dest.UpdateDate, opt => opt.Ignore())
                 .ForMember(dest => dest.IsCompleted, opt => opt.MapFrom(src => false));
-            CreateMap<TaskDTO, TaskEntity>();
+            CreateMap<TaskEntity, TaskDTO>();
         }
     }
 }
