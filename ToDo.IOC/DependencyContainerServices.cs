@@ -2,8 +2,10 @@
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using ToDo.Application.Contracts.Persistance;
+using ToDo.Application.Contracts.Security;
 using ToDo.Infrastructure.Persistance;
 using ToDo.Infrastructure.Persistance.Repositories;
+using ToDo.Infrastructure.Security;
 
 namespace ToDo.IOC
 {
@@ -17,6 +19,8 @@ namespace ToDo.IOC
             });
 
             services.AddScoped<ITaskRepository, TaskRepository>();
+            services.AddScoped<IUserRepository, UserRepository>();
+            services.AddScoped<IPasswordEncryption, PasswordEncryption>();
 
             return services;
         }

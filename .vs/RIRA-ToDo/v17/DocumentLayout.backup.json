@@ -3,16 +3,32 @@
   "WorkspaceRootPath": "C:\\Project\\Rira\\RIRA-ToDo\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8A534E29-F25A-400E-A9EE-94741D0B69F9}|ToDo.Presentation\\ToDo.Presentation.csproj|c:\\project\\rira\\rira-todo\\todo.presentation\\controller\\taskcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8A534E29-F25A-400E-A9EE-94741D0B69F9}|ToDo.Presentation\\ToDo.Presentation.csproj|solutionrelative:todo.presentation\\controller\\taskcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7152C071-CF0E-4433-AE0F-6075146E7970}|ToDo.Application\\ToDo.Application.csproj|c:\\project\\rira\\rira-todo\\todo.application\\features\\users\\commands\\register\\registercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7152C071-CF0E-4433-AE0F-6075146E7970}|ToDo.Application\\ToDo.Application.csproj|solutionrelative:todo.application\\features\\users\\commands\\register\\registercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8A534E29-F25A-400E-A9EE-94741D0B69F9}|ToDo.Presentation\\ToDo.Presentation.csproj|c:\\project\\rira\\rira-todo\\todo.presentation\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{8A534E29-F25A-400E-A9EE-94741D0B69F9}|ToDo.Presentation\\ToDo.Presentation.csproj|solutionrelative:todo.presentation\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{279C0C0F-0790-4052-9348-B88B70D199A4}|ToDo.Domain\\ToDo.Domain.csproj|c:\\project\\rira\\rira-todo\\todo.domain\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{279C0C0F-0790-4052-9348-B88B70D199A4}|ToDo.Domain\\ToDo.Domain.csproj|solutionrelative:todo.domain\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8A534E29-F25A-400E-A9EE-94741D0B69F9}|ToDo.Presentation\\ToDo.Presentation.csproj|c:\\project\\rira\\rira-todo\\todo.presentation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8A534E29-F25A-400E-A9EE-94741D0B69F9}|ToDo.Presentation\\ToDo.Presentation.csproj|solutionrelative:todo.presentation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8A534E29-F25A-400E-A9EE-94741D0B69F9}|ToDo.Presentation\\ToDo.Presentation.csproj|c:\\project\\rira\\rira-todo\\todo.presentation\\controller\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A534E29-F25A-400E-A9EE-94741D0B69F9}|ToDo.Presentation\\ToDo.Presentation.csproj|solutionrelative:todo.presentation\\controller\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7152C071-CF0E-4433-AE0F-6075146E7970}|ToDo.Application\\ToDo.Application.csproj|c:\\project\\rira\\rira-todo\\todo.application\\features\\users\\commands\\register\\registercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7152C071-CF0E-4433-AE0F-6075146E7970}|ToDo.Application\\ToDo.Application.csproj|solutionrelative:todo.application\\features\\users\\commands\\register\\registercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99911BA1-EF5D-46AB-8722-5C47F9C70834}|ToDo.IOC\\ToDo.IOC.csproj|c:\\project\\rira\\rira-todo\\todo.ioc\\dependencycontainerservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{99911BA1-EF5D-46AB-8722-5C47F9C70834}|ToDo.IOC\\ToDo.IOC.csproj|solutionrelative:todo.ioc\\dependencycontainerservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7152C071-CF0E-4433-AE0F-6075146E7970}|ToDo.Application\\ToDo.Application.csproj|c:\\project\\rira\\rira-todo\\todo.application\\common\\mapperprofiles\\taskprofile\\taskprofilemapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7152C071-CF0E-4433-AE0F-6075146E7970}|ToDo.Application\\ToDo.Application.csproj|solutionrelative:todo.application\\common\\mapperprofiles\\taskprofile\\taskprofilemapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7152C071-CF0E-4433-AE0F-6075146E7970}|ToDo.Application\\ToDo.Application.csproj|c:\\project\\rira\\rira-todo\\todo.application\\common\\mapperprofiles\\userprofile\\userprofilemapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7152C071-CF0E-4433-AE0F-6075146E7970}|ToDo.Application\\ToDo.Application.csproj|solutionrelative:todo.application\\common\\mapperprofiles\\userprofile\\userprofilemapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,45 +38,97 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\Project\\Rira\\RIRA-ToDo\\ToDo.Presentation\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "ToDo.Presentation\\Properties\\launchSettings.json",
-              "ToolTip": "C:\\Project\\Rira\\RIRA-ToDo\\ToDo.Presentation\\Properties\\launchSettings.json",
-              "RelativeToolTip": "ToDo.Presentation\\Properties\\launchSettings.json",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABoAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-03-15T08:15:56.648Z",
+              "DocumentIndex": 0,
+              "Title": "RegisterCommand.cs",
+              "DocumentMoniker": "C:\\Project\\Rira\\RIRA-ToDo\\ToDo.Application\\Features\\Users\\Commands\\Register\\RegisterCommand.cs",
+              "RelativeDocumentMoniker": "ToDo.Application\\Features\\Users\\Commands\\Register\\RegisterCommand.cs",
+              "ToolTip": "C:\\Project\\Rira\\RIRA-ToDo\\ToDo.Application\\Features\\Users\\Commands\\Register\\RegisterCommand.cs",
+              "RelativeToolTip": "ToDo.Application\\Features\\Users\\Commands\\Register\\RegisterCommand.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABEAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-15T11:26:06.542Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "TaskController.cs",
-              "DocumentMoniker": "C:\\Project\\Rira\\RIRA-ToDo\\ToDo.Presentation\\Controller\\TaskController.cs",
-              "RelativeDocumentMoniker": "ToDo.Presentation\\Controller\\TaskController.cs",
-              "ToolTip": "C:\\Project\\Rira\\RIRA-ToDo\\ToDo.Presentation\\Controller\\TaskController.cs",
-              "RelativeToolTip": "ToDo.Presentation\\Controller\\TaskController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAAIAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Project\\Rira\\RIRA-ToDo\\ToDo.Domain\\Entities\\User.cs",
+              "RelativeDocumentMoniker": "ToDo.Domain\\Entities\\User.cs",
+              "ToolTip": "C:\\Project\\Rira\\RIRA-ToDo\\ToDo.Domain\\Entities\\User.cs",
+              "RelativeToolTip": "ToDo.Domain\\Entities\\User.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABIAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-15T08:15:08.117Z",
+              "WhenOpened": "2025-03-15T11:25:46.221Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DependencyContainerServices.cs",
+              "DocumentMoniker": "C:\\Project\\Rira\\RIRA-ToDo\\ToDo.IOC\\DependencyContainerServices.cs",
+              "RelativeDocumentMoniker": "ToDo.IOC\\DependencyContainerServices.cs",
+              "ToolTip": "C:\\Project\\Rira\\RIRA-ToDo\\ToDo.IOC\\DependencyContainerServices.cs",
+              "RelativeToolTip": "ToDo.IOC\\DependencyContainerServices.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAABYAAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-15T11:03:05.088Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Project\\Rira\\RIRA-ToDo\\ToDo.Presentation\\Program.cs",
-              "RelativeDocumentMoniker": "ToDo.Presentation\\Program.cs",
-              "ToolTip": "C:\\Project\\Rira\\RIRA-ToDo\\ToDo.Presentation\\Program.cs",
-              "RelativeToolTip": "ToDo.Presentation\\Program.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAkwC0AAAAhAAAAAAAAAA==",
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Project\\Rira\\RIRA-ToDo\\ToDo.Presentation\\Controller\\AuthController.cs",
+              "RelativeDocumentMoniker": "ToDo.Presentation\\Controller\\AuthController.cs",
+              "ToolTip": "C:\\Project\\Rira\\RIRA-ToDo\\ToDo.Presentation\\Controller\\AuthController.cs",
+              "RelativeToolTip": "ToDo.Presentation\\Controller\\AuthController.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwCAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-15T07:54:36.057Z",
+              "WhenOpened": "2025-03-15T10:57:17.851Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TaskProfileMapper.cs",
+              "DocumentMoniker": "C:\\Project\\Rira\\RIRA-ToDo\\ToDo.Application\\Common\\MapperProfiles\\TaskProfile\\TaskProfileMapper.cs",
+              "RelativeDocumentMoniker": "ToDo.Application\\Common\\MapperProfiles\\TaskProfile\\TaskProfileMapper.cs",
+              "ToolTip": "C:\\Project\\Rira\\RIRA-ToDo\\ToDo.Application\\Common\\MapperProfiles\\TaskProfile\\TaskProfileMapper.cs",
+              "RelativeToolTip": "ToDo.Application\\Common\\MapperProfiles\\TaskProfile\\TaskProfileMapper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-15T10:55:25.297Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UserProfileMapper.cs",
+              "DocumentMoniker": "C:\\Project\\Rira\\RIRA-ToDo\\ToDo.Application\\Common\\MapperProfiles\\UserProfile\\UserProfileMapper.cs",
+              "RelativeDocumentMoniker": "ToDo.Application\\Common\\MapperProfiles\\UserProfile\\UserProfileMapper.cs",
+              "ToolTip": "C:\\Project\\Rira\\RIRA-ToDo\\ToDo.Application\\Common\\MapperProfiles\\UserProfile\\UserProfileMapper.cs",
+              "RelativeToolTip": "ToDo.Application\\Common\\MapperProfiles\\UserProfile\\UserProfileMapper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-15T10:54:28.229Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RegisterCommandHandler.cs",
+              "DocumentMoniker": "C:\\Project\\Rira\\RIRA-ToDo\\ToDo.Application\\Features\\Users\\Commands\\Register\\RegisterCommandHandler.cs",
+              "RelativeDocumentMoniker": "ToDo.Application\\Features\\Users\\Commands\\Register\\RegisterCommandHandler.cs",
+              "ToolTip": "C:\\Project\\Rira\\RIRA-ToDo\\ToDo.Application\\Features\\Users\\Commands\\Register\\RegisterCommandHandler.cs",
+              "RelativeToolTip": "ToDo.Application\\Features\\Users\\Commands\\Register\\RegisterCommandHandler.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAgwCgAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-15T10:54:02.216Z",
               "EditorCaption": ""
             }
           ]
