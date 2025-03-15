@@ -1,5 +1,6 @@
 
 using Microsoft.EntityFrameworkCore;
+using ToDo.Application;
 using ToDo.Infrastructure.Persistance;
 using ToDo.IOC;
 
@@ -14,6 +15,11 @@ namespace ToDo.Presentation
             // Add services to the container.
             builder.Services.AddInfrastructureServices(builder.Configuration);
 
+
+            //add mediatR dependency
+            builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(ApplicationAssemblyReference).Assembly));
+            //add dependency to AutoMapper
+            builder.Services.AddAutoMapper(typeof(ApplicationAssemblyReference).Assembly);
 
 
             builder.Services.AddControllers();

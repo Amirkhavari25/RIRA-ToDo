@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "C:\\Project\\Rira\\RIRA-ToDo\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7152C071-CF0E-4433-AE0F-6075146E7970}|ToDo.Application\\ToDo.Application.csproj|c:\\project\\rira\\rira-todo\\todo.application\\contracts\\persistance\\itaskrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7152C071-CF0E-4433-AE0F-6075146E7970}|ToDo.Application\\ToDo.Application.csproj|solutionrelative:todo.application\\contracts\\persistance\\itaskrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8A534E29-F25A-400E-A9EE-94741D0B69F9}|ToDo.Presentation\\ToDo.Presentation.csproj|c:\\project\\rira\\rira-todo\\todo.presentation\\controller\\taskcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A534E29-F25A-400E-A9EE-94741D0B69F9}|ToDo.Presentation\\ToDo.Presentation.csproj|solutionrelative:todo.presentation\\controller\\taskcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A534E29-F25A-400E-A9EE-94741D0B69F9}|ToDo.Presentation\\ToDo.Presentation.csproj|c:\\project\\rira\\rira-todo\\todo.presentation\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{8A534E29-F25A-400E-A9EE-94741D0B69F9}|ToDo.Presentation\\ToDo.Presentation.csproj|solutionrelative:todo.presentation\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A534E29-F25A-400E-A9EE-94741D0B69F9}|ToDo.Presentation\\ToDo.Presentation.csproj|c:\\project\\rira\\rira-todo\\todo.presentation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A534E29-F25A-400E-A9EE-94741D0B69F9}|ToDo.Presentation\\ToDo.Presentation.csproj|solutionrelative:todo.presentation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,27 +22,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Project\\Rira\\RIRA-ToDo\\ToDo.Presentation\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "ToDo.Presentation\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Project\\Rira\\RIRA-ToDo\\ToDo.Presentation\\Properties\\launchSettings.json",
+              "RelativeToolTip": "ToDo.Presentation\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABoAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-15T08:15:56.648Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ITaskRepository.cs",
-              "DocumentMoniker": "C:\\Project\\Rira\\RIRA-ToDo\\ToDo.Application\\Contracts\\Persistance\\ITaskRepository.cs",
-              "RelativeDocumentMoniker": "ToDo.Application\\Contracts\\Persistance\\ITaskRepository.cs",
-              "ToolTip": "C:\\Project\\Rira\\RIRA-ToDo\\ToDo.Application\\Contracts\\Persistance\\ITaskRepository.cs",
-              "RelativeToolTip": "ToDo.Application\\Contracts\\Persistance\\ITaskRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBEAAAAiAAAAAAAAAA==",
+              "Title": "TaskController.cs",
+              "DocumentMoniker": "C:\\Project\\Rira\\RIRA-ToDo\\ToDo.Presentation\\Controller\\TaskController.cs",
+              "RelativeDocumentMoniker": "ToDo.Presentation\\Controller\\TaskController.cs",
+              "ToolTip": "C:\\Project\\Rira\\RIRA-ToDo\\ToDo.Presentation\\Controller\\TaskController.cs",
+              "RelativeToolTip": "ToDo.Presentation\\Controller\\TaskController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-13T12:03:12.651Z",
+              "WhenOpened": "2025-03-15T08:15:08.117Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Project\\Rira\\RIRA-ToDo\\ToDo.Presentation\\Program.cs",
+              "RelativeDocumentMoniker": "ToDo.Presentation\\Program.cs",
+              "ToolTip": "C:\\Project\\Rira\\RIRA-ToDo\\ToDo.Presentation\\Program.cs",
+              "RelativeToolTip": "ToDo.Presentation\\Program.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAkwC0AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-15T07:54:36.057Z",
               "EditorCaption": ""
             }
           ]
