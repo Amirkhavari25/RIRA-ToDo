@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using ToDo.Application.DTOs;
 using ToDo.Application.Features.Tasks.Commands.CreateTask;
+using ToDo.Application.Features.Tasks.Commands.UpdateTask;
 using ToDo.Domain.Entities;
 
 namespace ToDo.Application.Common.MapperProfiles.TaskProfile
@@ -20,6 +21,11 @@ namespace ToDo.Application.Common.MapperProfiles.TaskProfile
                 .ForMember(dest => dest.UpdateDate, opt => opt.Ignore())
                 .ForMember(dest => dest.IsCompleted, opt => opt.MapFrom(src => false));
             CreateMap<TaskEntity, TaskDTO>();
+
+            CreateMap<UpdateTaskCommand, TaskEntity>()
+                .ForMember(dest=>dest.Id,opt=> opt.Ignore())
+                .ForMember(dest => dest.UpdateDate, opt => opt.Ignore());
+
         }
     }
 }

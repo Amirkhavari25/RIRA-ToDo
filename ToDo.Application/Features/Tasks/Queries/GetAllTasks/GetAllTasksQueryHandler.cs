@@ -32,7 +32,7 @@ namespace ToDo.Application.Features.Tasks.Queries.GetAllTasks
             }
             catch (Exception ex)
             {
-                return ResultDTO<List<TaskDTO>>.FailureResult($"Error creating task: {ex.Message}");
+                return ResultDTO<List<TaskDTO>>.FailureResult($"Error getting all tasks: {ex.Message}");
             }
         }
     }

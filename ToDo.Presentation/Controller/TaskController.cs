@@ -4,7 +4,9 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
 using ToDo.Application.Features.Tasks.Commands.CreateTask;
+using ToDo.Application.Features.Tasks.Commands.UpdateTask;
 using ToDo.Application.Features.Tasks.Queries.GetAllTasks;
+using ToDo.Application.Features.Tasks.Queries.GetById;
 using ToDo.Domain.Entities;
 using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
 
@@ -59,15 +61,60 @@ namespace ToDo.Presentation.Controller
             }
             else if (result.ErrorMessage.Contains("not found", StringComparison.OrdinalIgnoreCase))
             {
-                return NotFound(new { message = result.ErrorMessage }); 
+                return NotFound(new { message = result.ErrorMessage });
             }
             else if (result.ErrorMessage.Contains("validation", StringComparison.OrdinalIgnoreCase))
             {
-                return BadRequest(new { message = result.ErrorMessage }); 
+                return BadRequest(new { message = result.ErrorMessage });
             }
             else
             {
-                return StatusCode(500, new { message = result.ErrorMessage }); 
+                return StatusCode(500, new { message = result.ErrorMessage });
+            }
+        }
+
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetTaskById(Guid id)
+        {
+            var result = await _mediator.Send(new GetTaskByIdQuery(id));
+
+            if (result.Success)
+            {
+                if (result.Data == null)
+                {
+                    return NotFound("Task not found");
+                }
+                return Ok(result);
+            }
+            else if (result.ErrorMessage.Contains("not found", StringComparison.OrdinalIgnoreCase))
+            {
+                return NotFound(new { message = result.ErrorMessage });
+            }
+            else
+            {
+                return StatusCode(500, new { message = result.ErrorMessage });
+            }
+        }
+
+        [HttpPut("{id}")]
+        public async Task<IActionResult> UpdateTask(Guid id, UpdateTaskCommand command)
+        {
+            if (id != command.Id)
+            {
+                return BadRequest("Task Id mismatch");
+            }
+            var result = await _mediator.Send(command);
+            if (result.Success)
+            {
+                return NoContent();
+            }
+            else if (result.ErrorMessage.Contains("not found", StringComparison.OrdinalIgnoreCase))
+            {
+                return NotFound(new { message = result.ErrorMessage });
+            }
+            else
+            {
+                return StatusCode(500, new { message = result.ErrorMessage });
             }
         }
     }
