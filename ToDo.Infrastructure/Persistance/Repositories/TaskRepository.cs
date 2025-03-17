@@ -34,9 +34,10 @@ namespace ToDo.Infrastructure.Persistance.Repositories
             }
         }
 
-        public IQueryable<TaskEntity> GetAll()
+        public async Task<List<TaskEntity?>> GetAllAsync(string creator)
         {
-            return _context.Tasks.Where(t => !t.IsDelete).AsQueryable();
+            IQueryable<TaskEntity> query = _context.Tasks.Where(t => !t.IsDelete && t.UserId.ToString() == creator).AsQueryable();
+            return await query.ToListAsync();
         }
 
         public async Task<TaskEntity?> GetByIdAsync(Guid Id)

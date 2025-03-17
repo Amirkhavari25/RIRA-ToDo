@@ -28,6 +28,11 @@ namespace ToDo.Application.Features.Users.Commands.Register
         {
             try
             {
+                var checkUserExist = await _userRepository.GetByEmailAsync(request.Email);
+                if(checkUserExist != null)
+                {
+                    return ResultDTO<UserDTO>.FailureResult("User already exist try to login");
+                }
                 var UserEntity = _mapper.Map<User>(request);
                 UserEntity.PasswordHash = await _passwordEncryption.HashPassword(request.Password);
                 await _userRepository.CreateAsync(UserEntity);

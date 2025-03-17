@@ -44,7 +44,7 @@ namespace ToDo.Presentation.Controller
             var result = await _mediator.Send(command);
 
             if (!result.Success)
-                return Unauthorized(result.ErrorMessage);
+                return NotFound(result.ErrorMessage);
 
             return Ok(new { Token = result.Data });
         }

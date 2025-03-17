@@ -4,7 +4,9 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
 using ToDo.Application.Features.Tasks.Commands.CreateTask;
+using ToDo.Application.Features.Tasks.Queries.GetAllTasks;
 using ToDo.Domain.Entities;
+using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
 
 namespace ToDo.Presentation.Controller
 {
@@ -26,10 +28,6 @@ namespace ToDo.Presentation.Controller
             {
                 return BadRequest("Invalid Data");
             }
-            foreach (var claim in User.Claims)
-            {
-                Console.WriteLine($"Claim Type: {claim.Type}, Claim Value: {claim.Value}");
-            }
             var creatorId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
             if (creatorId == null)
             {
@@ -44,6 +42,33 @@ namespace ToDo.Presentation.Controller
             }
 
             return BadRequest(result.ErrorMessage);
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> GetAllTasks()
+        {
+            var creatorId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+            if (creatorId == null)
+            {
+                return Unauthorized("Invalid User request,Please try to login");
+            }
+            var result = await _mediator.Send(new GetAllTaskQuery(creatorId));
+            if (result.Success)
+            {
+                return Ok(result);
+            }
+            else if (result.ErrorMessage.Contains("not found", StringComparison.OrdinalIgnoreCase))
+            {
+                return NotFound(new { message = result.ErrorMessage }); 
+            }
+            else if (result.ErrorMessage.Contains("validation", StringComparison.OrdinalIgnoreCase))
+            {
+                return BadRequest(new { message = result.ErrorMessage }); 
+            }
+            else
+            {
+                return StatusCode(500, new { message = result.ErrorMessage }); 
+            }
         }
     }
 }

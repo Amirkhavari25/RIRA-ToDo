@@ -9,7 +9,7 @@ namespace ToDo.Application.Contracts.Persistance
 {
     public interface ITaskRepository
     {
-        IQueryable<TaskEntity> GetAll();
+        Task<List<TaskEntity?>> GetAllAsync(string creator);
 
         Task<TaskEntity?> GetByIdAsync(Guid Id);
 
