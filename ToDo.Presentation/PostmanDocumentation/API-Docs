@@ -1,0 +1,1028 @@
+{
+	"info": {
+		"_postman_id": "5a361cbb-0b48-4c75-91c0-e3c2cac607dd",
+		"name": "Rira-ToDo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34213479"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"khavari@example.com\",\r\n    \"password\":\"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{HostAddress}}:5007/api/auth/login",
+					"host": [
+						"{{HostAddress}}"
+					],
+					"port": "5007",
+					"path": [
+						"api",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Success",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"khavari@example.com\",\r\n    \"password\":\"123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{HostAddress}}:5007/api/auth/login",
+							"host": [
+								"{{HostAddress}}"
+							],
+							"port": "5007",
+							"path": [
+								"api",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 17 Mar 2025 09:36:28 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Kestrel"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MWY2ZjhjZi02NWFiLTQ1MzgtYzk3My0wOGRkNjNiM2Q2Y2YiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjYxZjZmOGNmLTY1YWItNDUzOC1jOTczLTA4ZGQ2M2IzZDZjZiIsImVtYWlsIjoia2hhdmFyaUBleGFtcGxlLmNvbSIsInVzZXJuYW1lIjoiQW1pcmtoYXZhcmkiLCJleHAiOjE3NDIyMDc3ODgsImlzcyI6IlJpcmEtVG9Eby50ZXN0IiwiYXVkIjoiUmlyYS1Ub0RvLnRlc3QifQ.V6WmWhSQde_azwHLhriEFzhhXfr2HwnEmEJ5V7FRNWg\"\n}"
+				},
+				{
+					"name": "User not found",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"khavariamir@example.com\",\r\n    \"password\":\"123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{HostAddress}}:5007/api/auth/login",
+							"host": [
+								"{{HostAddress}}"
+							],
+							"port": "5007",
+							"path": [
+								"api",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "text/plain; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 17 Mar 2025 09:37:18 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Kestrel"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "User not found"
+				},
+				{
+					"name": "Wrong password try",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"khavari@example.com\",\r\n    \"password\":\"12345611\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{HostAddress}}:5007/api/auth/login",
+							"host": [
+								"{{HostAddress}}"
+							],
+							"port": "5007",
+							"path": [
+								"api",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "text/plain; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 17 Mar 2025 09:37:38 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Kestrel"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "Wrong password or email"
+				}
+			]
+		},
+		{
+			"name": "Get all tasks",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{HostAddress}}:5007/api/task",
+					"host": [
+						"{{HostAddress}}"
+					],
+					"port": "5007",
+					"path": [
+						"api",
+						"task"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Unauthorized for no token or wrong token",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{HostAddress}}:5007/api/task",
+							"host": [
+								"{{HostAddress}}"
+							],
+							"port": "5007",
+							"path": [
+								"api",
+								"task"
+							]
+						}
+					},
+					"status": "Unauthorized",
+					"code": 401,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Length",
+							"value": "0"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 17 Mar 2025 09:38:30 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Kestrel"
+						},
+						{
+							"key": "WWW-Authenticate",
+							"value": "Bearer"
+						}
+					],
+					"cookie": [],
+					"body": null
+				},
+				{
+					"name": "Success",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{HostAddress}}:5007/api/task",
+							"host": [
+								"{{HostAddress}}"
+							],
+							"port": "5007",
+							"path": [
+								"api",
+								"task"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 17 Mar 2025 09:39:34 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Kestrel"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"data\": [\n        {\n            \"id\": \"24fcc2f9-0048-4270-8649-08dd63cba6bb\",\n            \"title\": \"ّتسک اول\",\n            \"description\": \"بنام خدا\",\n            \"isCompleted\": false,\n            \"dueDate\": \"2025-03-15T08:15:37.763\"\n        },\n        {\n            \"id\": \"30c8098e-0dab-4cee-864a-08dd63cba6bb\",\n            \"title\": \"ّتسک اول\",\n            \"description\": \"بنام خدا\",\n            \"isCompleted\": false,\n            \"dueDate\": \"2025-03-15T08:15:37.763\"\n        },\n        {\n            \"id\": \"0dfedef6-b1e7-4dd8-b2f6-08dd63cc2173\",\n            \"title\": \"ّتسک اول\",\n            \"description\": \"بنام خدا\",\n            \"isCompleted\": false,\n            \"dueDate\": \"2025-03-15T08:15:37.763\"\n        }\n    ],\n    \"errorMessage\": null,\n    \"validationErrors\": [],\n    \"errorCode\": null\n}"
+				}
+			]
+		},
+		{
+			"name": "Create task",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{HostAddress}}:5007/api/task",
+					"host": [
+						"{{HostAddress}}"
+					],
+					"port": "5007",
+					"path": [
+						"api",
+						"task"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Unauthorized , need to login and send token as header first",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{HostAddress}}:5007/api/task",
+							"host": [
+								"{{HostAddress}}"
+							],
+							"port": "5007",
+							"path": [
+								"api",
+								"task"
+							]
+						}
+					},
+					"status": "Unauthorized",
+					"code": 401,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Length",
+							"value": "0"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 17 Mar 2025 09:40:14 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Kestrel"
+						},
+						{
+							"key": "WWW-Authenticate",
+							"value": "Bearer"
+						}
+					],
+					"cookie": [],
+					"body": null
+				},
+				{
+					"name": "Success",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\":\"Hello\",\r\n    \"description\":\"Hello \",\r\n    \"dueDate\":\"2025-03-17T09:42:29.024Z\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{HostAddress}}:5007/api/task",
+							"host": [
+								"{{HostAddress}}"
+							],
+							"port": "5007",
+							"path": [
+								"api",
+								"task"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 17 Mar 2025 09:42:39 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Kestrel"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"data\": {\n        \"id\": \"0c44482b-885f-484c-65c0-08dd65380e78\",\n        \"title\": \"Hello\",\n        \"description\": \"Hello \",\n        \"isCompleted\": false,\n        \"dueDate\": \"2025-03-17T09:42:29.024Z\"\n    },\n    \"errorMessage\": null,\n    \"validationErrors\": [],\n    \"errorCode\": null\n}"
+				}
+			]
+		},
+		{
+			"name": "Register",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"khavari@example.com\",\r\n  \"username\": \"KhavariTest\",\r\n  \"mobile\": \"999999\",\r\n  \"password\": \"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{HostAddress}}:5007/api/auth/register",
+					"host": [
+						"{{HostAddress}}"
+					],
+					"port": "5007",
+					"path": [
+						"api",
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "User already exist",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"email\": \"khavari@example.com\",\r\n  \"username\": \"KhavariTest\",\r\n  \"mobile\": \"999999\",\r\n  \"password\": \"123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{HostAddress}}:5007/api/auth/register",
+							"host": [
+								"{{HostAddress}}"
+							],
+							"port": "5007",
+							"path": [
+								"api",
+								"auth",
+								"register"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "text/plain; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 17 Mar 2025 09:47:31 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Kestrel"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "User already exist try to login"
+				},
+				{
+					"name": "Success",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"email\": \"khavaritest@example.com\",\r\n  \"username\": \"KhavariTest\",\r\n  \"mobile\": \"999999\",\r\n  \"password\": \"123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{HostAddress}}:5007/api/auth/register",
+							"host": [
+								"{{HostAddress}}"
+							],
+							"port": "5007",
+							"path": [
+								"api",
+								"auth",
+								"register"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 17 Mar 2025 09:48:47 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Kestrel"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"data\": {\n        \"id\": \"02ae6fad-c600-4a66-b4ad-08dd6538e68f\",\n        \"email\": \"khavaritest@example.com\",\n        \"username\": \"KhavariTest\",\n        \"mobile\": \"999999\"\n    },\n    \"errorMessage\": null,\n    \"validationErrors\": [],\n    \"errorCode\": null\n}"
+				}
+			]
+		},
+		{
+			"name": "Get task by id",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{HostAddress}}:5007/api/task?id=24FCC2F9-0048-4270-8649-08DD63CBA6BB",
+					"host": [
+						"{{HostAddress}}"
+					],
+					"port": "5007",
+					"path": [
+						"api",
+						"task"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "24FCC2F9-0048-4270-8649-08DD63CBA6BB"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Unauthorized",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{HostAddress}}:5007/api/task?id=24FCC2F9-0048-4270-8649-08DD63CBA6BB",
+							"host": [
+								"{{HostAddress}}"
+							],
+							"port": "5007",
+							"path": [
+								"api",
+								"task"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "24FCC2F9-0048-4270-8649-08DD63CBA6BB"
+								}
+							]
+						}
+					},
+					"status": "Unauthorized",
+					"code": 401,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Length",
+							"value": "0"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 17 Mar 2025 13:29:33 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Kestrel"
+						},
+						{
+							"key": "WWW-Authenticate",
+							"value": "Bearer"
+						}
+					],
+					"cookie": [],
+					"body": null
+				},
+				{
+					"name": "Success",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{HostAddress}}:5007/api/task/24FCC2F9-0048-4270-8649-08DD63CBA6BB",
+							"host": [
+								"{{HostAddress}}"
+							],
+							"port": "5007",
+							"path": [
+								"api",
+								"task",
+								"24FCC2F9-0048-4270-8649-08DD63CBA6BB"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 17 Mar 2025 13:32:09 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Kestrel"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"data\": {\n        \"id\": \"24fcc2f9-0048-4270-8649-08dd63cba6bb\",\n        \"title\": \"ّتسک اول\",\n        \"description\": \"بنام خدا\",\n        \"isCompleted\": false,\n        \"dueDate\": \"2025-03-15T08:15:37.763\"\n    },\n    \"errorMessage\": null,\n    \"validationErrors\": [],\n    \"errorCode\": null\n}"
+				}
+			]
+		},
+		{
+			"name": "Update task",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "{{HostAddress}}:5007/api/task/24FCC2F9-0048-4270-8649-08DD63CBA6Bc",
+					"host": [
+						"{{HostAddress}}"
+					],
+					"port": "5007",
+					"path": [
+						"api",
+						"task",
+						"24FCC2F9-0048-4270-8649-08DD63CBA6Bc"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Unauthorized",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{HostAddress}}:5007/api/task/24FCC2F9-0048-4270-8649-08DD63CBA6Bc",
+							"host": [
+								"{{HostAddress}}"
+							],
+							"port": "5007",
+							"path": [
+								"api",
+								"task",
+								"24FCC2F9-0048-4270-8649-08DD63CBA6Bc"
+							]
+						}
+					},
+					"status": "Unauthorized",
+					"code": 401,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Length",
+							"value": "0"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 17 Mar 2025 13:59:31 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Kestrel"
+						},
+						{
+							"key": "WWW-Authenticate",
+							"value": "Bearer"
+						}
+					],
+					"cookie": [],
+					"body": null
+				},
+				{
+					"name": "Bad request",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": \"3fa85f64-5717-4562-b3fc-2c963f66afa6\",\r\n  \"title\": \"string\",\r\n  \"description\": \"string\",\r\n  \"isCompleted\": true,\r\n  \"dueDate\": \"2025-03-17T13:58:54.694Z\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{HostAddress}}:5007/api/task/24FCC2F9-0048-4270-8649-08DD63CBA6Bc",
+							"host": [
+								"{{HostAddress}}"
+							],
+							"port": "5007",
+							"path": [
+								"api",
+								"task",
+								"24FCC2F9-0048-4270-8649-08DD63CBA6Bc"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "text/plain; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 17 Mar 2025 14:18:13 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Kestrel"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "Task Id mismatch"
+				},
+				{
+					"name": "Not found",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": \"3fa85f64-5717-4562-b3fc-2c963f66afaa\",\r\n  \"title\": \"string\",\r\n  \"description\": \"string\",\r\n  \"isCompleted\": true,\r\n  \"dueDate\": \"2025-03-17T13:58:54.694Z\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{HostAddress}}:5007/api/task/3fa85f64-5717-4562-b3fc-2c963f66afaa",
+							"host": [
+								"{{HostAddress}}"
+							],
+							"port": "5007",
+							"path": [
+								"api",
+								"task",
+								"3fa85f64-5717-4562-b3fc-2c963f66afaa"
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 17 Mar 2025 14:19:07 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Kestrel"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Task not found\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Delete task",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{HostAddress}}:5007/api/task/24FCC2F9-0048-4270-8649-08DD63CBA6Bc",
+					"host": [
+						"{{HostAddress}}"
+					],
+					"port": "5007",
+					"path": [
+						"api",
+						"task",
+						"24FCC2F9-0048-4270-8649-08DD63CBA6Bc"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Unauthorized",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{HostAddress}}:5007/api/task/24FCC2F9-0048-4270-8649-08DD63CBA6Bc",
+							"host": [
+								"{{HostAddress}}"
+							],
+							"port": "5007",
+							"path": [
+								"api",
+								"task",
+								"24FCC2F9-0048-4270-8649-08DD63CBA6Bc"
+							]
+						}
+					},
+					"status": "Unauthorized",
+					"code": 401,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Length",
+							"value": "0"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 18 Mar 2025 15:21:16 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Kestrel"
+						},
+						{
+							"key": "WWW-Authenticate",
+							"value": "Bearer"
+						}
+					],
+					"cookie": [],
+					"body": null
+				},
+				{
+					"name": "Not found",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{HostAddress}}:5007/api/task/24FCC2F9-0048-4270-8649-08DD63CBA6Bc",
+							"host": [
+								"{{HostAddress}}"
+							],
+							"port": "5007",
+							"path": [
+								"api",
+								"task",
+								"24FCC2F9-0048-4270-8649-08DD63CBA6Bc"
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 18 Mar 2025 15:22:40 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Kestrel"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Task not found\"\n}"
+				},
+				{
+					"name": "Success",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{HostAddress}}:5007/api/task/24FCC2F9-0048-4270-8649-08DD63CBA6BB",
+							"host": [
+								"{{HostAddress}}"
+							],
+							"port": "5007",
+							"path": [
+								"api",
+								"task",
+								"24FCC2F9-0048-4270-8649-08DD63CBA6BB"
+							]
+						}
+					},
+					"status": "No Content",
+					"code": 204,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 18 Mar 2025 15:23:51 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Kestrel"
+						}
+					],
+					"cookie": [],
+					"body": null
+				}
+			]
+		}
+	]
+}
