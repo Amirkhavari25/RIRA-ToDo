@@ -1,9 +1,11 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
 using ToDo.Application.Features.Tasks.Commands.CreateTask;
+using ToDo.Application.Features.Tasks.Commands.DeleteTask;
 using ToDo.Application.Features.Tasks.Commands.UpdateTask;
 using ToDo.Application.Features.Tasks.Queries.GetAllTasks;
 using ToDo.Application.Features.Tasks.Queries.GetById;
@@ -115,6 +117,24 @@ namespace ToDo.Presentation.Controller
             else
             {
                 return StatusCode(500, new { message = result.ErrorMessage });
+            }
+        }
+
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteTask(Guid id)
+        {
+            var res = await _mediator.Send(new DeleteTaskCommand(id));
+            if (res.Success)
+            {
+                return NoContent();
+            }
+            else if (res.ErrorMessage.Contains("not found", StringComparison.OrdinalIgnoreCase))
+            {
+                return NotFound(new { message = res.ErrorMessage });
+            }
+            else
+            {
+                return StatusCode(500, new { message = res.ErrorMessage });
             }
         }
     }
