@@ -47,10 +47,10 @@ Update the `appsettings.json` file with your **database connection string** and 
     }
   },
   "ConnectionStrings": {
-    "DefaultConnection": "Server=localhost;Database=ToDo_Db;User Id=amirkhavari;Password=13801380;TrustServerCertificate=True;"
+    "DefaultConnection": "Server=localhost;Database=ToDo_Db;User Id=setYourUserID;Password=set your password;TrustServerCertificate=True;"
   },
   "JwtSettings": {
-    "SecretKey": "Somesupersecretkey1234567890987654321123456789123456789",
+    "SecretKey": "Somesupersecretkey",
     "Issuer": "Rira-ToDo.test",
     "Audience": "Rira-ToDo.test",
     "ExpiryMinutes": 60
